@@ -1,0 +1,7 @@
+version: '2'
+services:
+  lib:
+    env_file: .env
+    image: sticksnleaves/elixir-project:1.5
+    volumes:
+      - .:/usr/src/app

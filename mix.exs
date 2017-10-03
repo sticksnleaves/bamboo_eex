@@ -20,7 +20,9 @@ defmodule Bamboo.EEx.Mixfile do
 
   defp deps do
     [
-      { :bamboo, ">= 0.8.0 and < 1.0.0" }
+      { :bamboo, ">= 0.8.0 and < 1.0.0" },
+      # dev
+      { :ex_doc, ">= 0.0.0", only: [ :dev ] }
     ]
   end
 

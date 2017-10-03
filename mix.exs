@@ -8,7 +8,8 @@ defmodule Bamboo.EEx.Mixfile do
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps(),
-      elixirc_paths: elixirc_paths(Mix.env)
+      elixirc_paths: elixirc_paths(Mix.env),
+      package: package()
     ]
   end
 
@@ -28,4 +29,14 @@ defmodule Bamboo.EEx.Mixfile do
 
   defp elixirc_paths(:test), do: [ "lib", "test/support" ]
   defp elixirc_paths(_env),  do: [ "lib" ]
+
+  defp package() do
+    %{
+      maintainers: [ "Anthony Smith" ],
+      licenses: [ "MIT" ],
+      links: %{
+        GitHub: "https://github.com/sticksnleaves/bamboo_eex"
+      }
+    }
+  end
 end

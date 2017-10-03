@@ -4,6 +4,7 @@ defmodule Bamboo.EEx.Mixfile do
   def project do
     [
       app: :bamboo_eex,
+      description: "EEx template support for Bamboo",
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,

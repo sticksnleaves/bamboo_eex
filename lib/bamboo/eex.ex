@@ -71,7 +71,7 @@ defmodule Bamboo.EEx do
   @doc """
   Assigns a value to a key in an email.
   """
-  @spec assign(Bamboo.Email.t, atom, atom) :: Bamboo.Email.t
+  @spec assign(Bamboo.Email.t, atom, any) :: Bamboo.Email.t
   def assign(%{ assigns: assigns } = email, key, value) do
     %{ email | assigns: Map.put(assigns, key, value) }
   end
